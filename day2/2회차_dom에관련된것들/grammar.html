@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+      .color{color:red;
+      font-size:48px;}
+    </style>
+        <script type="text/javascript">
+          function set(){
+            document.getElementsByTagName('p')[0].setAttribute('class','color')
+          }
+          function get(){
+            var x =document.getElementsByTagName('a')[0].getAttribute('href')
+            console.log(x)
+          }
+          function remo(){
+            document.getElementsByTagName('p')[0].removeAttribute('class')
+          }
+          function has(){
+            var y=document.getElementsByTagName('p')[0].hasAttribute('class')
+            console.log(y)
+          }
+          function node(){
+            var newNode = document.createElement('strong');
+            var newText = document.createTextNode('또 무엇이 많아요?');
+            newNode.appendChild(newText);
+            /*<strong> 또 무엇이 많아요?</strong>*/
+            var newTag=document.getElementsByTagName('p')[1];
+            newTag.insertBefore(newNode,newTag.childNodes[1]);
+            //복제
+            var cln = newTag.cloneNode(true);
+            document.getElementsByTagName('body')[0].appendChild(cln)
+
+          }
+        </script>
+  </head>
+  <body>
+    <!-- setAttribute / getAttribute -->
+    <p> setAttribute  :  속성값을 새로운 값으로 변경 생성
+    getAttribute : 속성값을 호출</p>
+    <a href="http://www.naver.com">네이버</a>
+    <button type="button" name="button" onclick="set();return false">setAttribute</button>
+    <button type="button" name="button" onclick="get();return false">getAttribute</button>
+
+     <!-- removeAttribut  / hasAttribute -->
+     <button type="button" name="button" onclick="remo();return false">removeAttribute</button>
+     <button type="button" name="button" onclick="has();return false">hasAttribute</button>
+
+     <!-- createElement:요소노드 생성  / createTextNode:텍스트노드 생성 / appendChild :마지막 자식노드로 추가 / insertBefore:사용자가 지정하는 기존 자식요소의 바로 앞에 노드를 추가
+       append: 셍성된 노드를 요소가 끝나기 전에 삽입 /  childNOde:자식노드 /  cloneNode: 노드를 복사-->
+
+       <h3>제주이야기</h3>
+       <p>제주에는 말이 많아요</p>
+       <button type="button" name="button" onclick="node()">click</button>
+  </body>
+</html>

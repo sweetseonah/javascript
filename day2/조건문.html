@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script type="text/javascript">
+      // 연산자를 이용한 조건문
+      function isAnimal(text){
+        return(
+          text==="고양이" || text ==="개" ||  text==="거북이" || text ==="너구리"
+        );
+      }
+      console.log(isAnimal('개'))
+      console.log(isAnimal('커피'))
+
+      //includes 이용한 조건문
+       function isWeb(text){
+         const web=['웹디자이너','웹퍼블리셔','프론트앤드개발'];
+         return web.includes(text);
+       }
+       console.log(isWeb('웹퍼블리셔'))
+       console.log(isWeb('백앤드개발'))
+
+       //화살표함수를 이용한 조건문
+      const isbook = text => ['제이쿼리', '포토샾', '일러스트', 'html'].includes(text);
+      console.log(isbook('포토샵'))
+      console.log(isbook('css'))
+
+      //객체를 이용한 조건문
+      function getSound(animal){
+        const sounds={
+          개:'멍멍!',
+          고양이:'야옹!',
+          참새:'짹짹',
+          오리:'꽥꽥'
+        /*key:value*/
+        }
+        return sounds[animal] || '....?'
+      }
+      console.log(getSound('개'))
+      console.log(getSound('오리'))
+      console.log(getSound('비둘기'))
+
+      //함수를 객체안에서 표현
+      function makeSound(animal){
+        const tasks={
+          개(){
+             console.log('멍멍')
+          },
+          고양이(){
+            console.log('야옹')
+          }
+        }
+        if(!tasks[animal]){
+          console.log("...?")
+          return;
+        }
+        task[animal]();
+      }
+      makeSound('개');
+      makeSound('개구리');
+    </script>
+  </head>
+  <body>
+
+  </body>
+</html>
