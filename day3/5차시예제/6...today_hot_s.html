@@ -1,0 +1,89 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko">
+ <head>
+  <title> new document </title>
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <style type="text/css">
+	html, body {font: 12px/15px "돋움",Dotum,Tahoma,Arial;}  
+	div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td {margin: 0;padding: 0;}
+	img {border:none;}
+	ol, ul, li {list-style: none;}
+	#todayHotDeal {width:947px;height:409px;padding:15px 16px 15px 15px;background:#fff;}
+	#todayHotDeal.bp15 {padding-bottom:15px;}
+	#todayHotDeal dt {position:relative;float:left;width:752px;}
+	#todayHotDeal dt a {display:none}
+	#todayHotDeal dt a.on {display:block}
+	#todayHotDeal dt .tsBand {position:absolute;top:9px;left:-8px;width:150px;height:72px;background:url('images/bg_main_stripe_20121023.png') no-repeat -575px -100px;z-index:100}
+	#todayHotDeal dd {float:left;width:195px;}
+	#todayHotDeal dd p {position:relative;width:195px;height:102px;cursor:pointer}
+	#todayHotDeal dd p#thdm1 {background:url('images/tab1.jpg') no-repeat;}
+	#todayHotDeal dd p#thdm1.on {background-position:-195px 0}
+	#todayHotDeal dd p#thdm2 {background:url('images/tab2.jpg') no-repeat;}
+	#todayHotDeal dd p#thdm2.on {background-position:-195px 0}
+	#todayHotDeal dd p#thdm3 {background:url('images/tab3.jpg') no-repeat;}
+	#todayHotDeal dd p#thdm3.on {background-position:-195px 0}
+	#todayHotDeal dd p#thdm4 {height:103px;background:url('images/tab4.jpg') no-repeat;}
+	#todayHotDeal dd p#thdm4.on {background-position:-195px 0}
+	#todayHotDeal dd p span {display:none;position:absolute;top:42px;left:-8px;width:11px;height:17px;background:url('images/bg_main_stripe_20121023.png') no-repeat -620px -60px;}
+	#todayHotDeal dd p span.on {display:block}
+  </style>
+  <script>
+
+	var currentNum=0;
+	var tabList;
+	var menuList;
+
+	function selectNum(num){
+		if(currentNum != num){
+			tabList[currentNum].className="";
+			tabList[currentNum].getElementsByTagName('span')[0].className="";
+			menuList[currentNum].className="";
+
+			tabList[num].className="on";
+			tabList[num].getElementsByTagName('span')[0].className="on";
+			menuList[num].className="on";
+
+			currentNum=num;
+	  }
+	}
+
+	function init(){
+		tabList=
+		document.getElementById('tabList').getElementsByTagName('p');
+	
+		menuList=
+		document.getElementById('menuList').getElementsByTagName('a');
+		// console.log(menuList)	
+
+		for(var i=0; i<menuList.length; i++){
+			tabList[i].num=i;
+			tabList[i].onmouseover=function(){
+				selectNum(this.num)
+			}
+		}
+	}
+	  window.onload=init;
+  </script>
+ </head>
+ <body style="padding:100px;">
+ <div id="todayHotDeal" class="bp15">
+	<dl>
+		<dt id="menuList">
+			<a href="#" id="thd1" class="on"><img src="images/p1.jpg" width="752" height="409" alt="" /></a>
+			<a href="#" id="thd2"><img src="images/p2.jpg" width="752" height="409" alt="" /></a>
+			<a href="#" id="thd3"><img src="images/p3.jpg" width="752" height="409" alt="" /></a>
+			<a href="#" id="thd4"><img src="images/p4.jpg" width="752" height="409" alt="" /></a>
+			<p class="tsBand"></p>
+		</dt>
+		<dd id="tabList">
+			<p id="thdm1" class="on"><span class="on"></span></p>
+			<p id="thdm2"><span></span></p>
+			<p id="thdm3"><span></span></p>
+			<p id="thdm4"><span></span></p>
+		</dd>
+	</dl>
+</div>
+ </body>
+</html>

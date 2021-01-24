@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    funName(); //정상실행
+    removeName(); //오류
+    //명시적(선언적)함수
+    function funName(){
+        console.log('명시적,선언적 함수 입니다')
+    }
+
+    //익명함수
+    var removeName=function(){
+        console.log('임명 함수 입니다')
+    }
+    removeName(); //정상실행
+</script>
+</body>
+</html>
