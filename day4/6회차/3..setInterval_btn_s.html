@@ -1,0 +1,91 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko">
+ <head>
+  <title> new document </title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+<style type="text/css">
+	body, div, p, ul, li, a, img{margin:0; padding:0;}
+	img{border:none;}
+	ul{list-style-type:none;}
+	.ifex{position:relative; 
+	width:697px;
+	height:326px; 
+	overflow:hidden;
+	margin:0 auto;}
+	#slide{width:3485px; position:absolute; left:0; top:0;}
+	#slide li{float:left;}
+	.ifex p{position:absolute; top:40%;  z-index:10;}
+	.ifex .leftbtn{left:0;}
+	.ifex .rightbtn{right:0;}
+
+	.btn{position:absolute;
+	bottom:20px;
+	text-align:center;
+	width:679px;
+	}
+
+</style>
+<script type="text/javascript">
+	var st;
+	var num=1;
+	var img=
+    ['images/banner1.jpg','images/banner2.jpg','images/banner3.jpg','images/banner4.jpg']
+
+	function rolling(){
+		// console.log('함수확인')
+		num++;
+		if(num>5){
+			num=1
+		}
+		// console.log(num)
+
+		var pic= document.getElementById('pic');
+		pic.src="images/img"+num+".jpg"
+		 }	
+		 
+	 st = setInterval(rolling,3000)
+	 
+	 function leftBtn(){
+		 num--
+		 if(num<1){
+			 num=5
+		 }
+	 }
+	 function rightBtn(){
+		 num++
+		 if(num>5){
+			 num=1
+		 }
+	 }
+	 function stopb(){
+		 clearInterval(st)
+	 }
+	 function playb(){
+		clearInterval(st)
+		st = setInterval(rolling,3000)
+	 }
+
+</script>
+ </head>
+
+ <body>
+  <div class="ifex">
+		<p class="leftbtn"><a href="#" onclick="leftBtn(); return false;"><img src="images/leftbtn.jpg" alt="왼쪽이동"/></a></p>
+				<ul id="slide">
+						<li><a href="#"><img src="images/img1.jpg" id="pic" alt=""/></a></li>
+						<li><a href="#"><img src="images/img2.jpg" id="pic" alt=""/></a></li>
+						<li><a href="#"><img src="images/img3.jpg" id="pic" alt=""/></a></li>
+						<li><a href="#"><img src="images/img4.jpg" id="pic" alt=""/></a></li>
+						<li><a href="#"><img src="images/img5.jpg" id="pic" alt=""/></a></li>
+				</ul>
+		<p class="rightbtn"><a href="#" onclick="rightBtn();  return false;"><img src="images/rightbtn.jpg" alt="오른쪽이동"/></a></p>
+     <div class="btn">
+    	<a href="#"  id="stop"  onclick="stopb(); return false;"><img src="images/pause.png"  alt=" "/></a>
+        <a href="#"  id="play" onclick="playb(); return false;"><img src="images/play-button.png"  alt=" "/></a>
+    </div>
+	</div>
+ </body>
+</html>

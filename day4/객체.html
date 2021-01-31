@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 객체 : 변수 혹은 상수를 사용하게 될때 하나의 이름에 여러 종류의 값을 넣을 수 있게 -->
+    <script>
+        // conts dog={
+        //     name:"멍멍이"
+        //     age:2
+        // };
+        // console.log(dog.name)
+        // console.log(dog.age)
+
+        // const ironMan={
+        //     name:'토니스타크',
+        //     actor:'로버트 다우니 주니어',
+        //     alias:'아이언맨'
+        // }
+        // const captsinAmerica={
+        //     name:'스티븐 로저스',
+        //     actor:'크리스 에반스',
+        //     alias:'캡틴 아메리카'
+        // }
+        // function print(hero){
+        //     const text=`${hero.alias}(${hero.name})역할을 맡은 배우는${hero.actor}입니다.`
+        // }
+        //     print(ironMan)
+        //     print(captainAmerica)
+
+        // 객체 안에 함수를 넣어서 표현가능 
+        // :: 객체 안에 있는 This 는 자신이 속해있는 객체를 가르키며 
+        // 함수를 선언할때는 이름이 없어도 된다
+
+        const dog={
+            name="멍멍이",
+            soumd="멍멍!",
+            say : function say(){
+                console.log(this.sound)
+            }
+        }
+    </script>
+</body>
+</html>

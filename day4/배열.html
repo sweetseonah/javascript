@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="pushbtn()">push</button>
+    <button onclick="unshiftbtn()">unshift</button>
+    <button onclick="slicebtn()">slice</button>
+    <button onclick="popbtn()">pop</button>
+    <button onclick="shiftbtn()">shift</button>
+    <p id="arrayText"></p>
+    <script>
+        var text=['사과','바나나','딸기','오렌지']
+        document.getElementById('arrayText').innerHTML=text;
+
+        function pushbtn(){
+            text.push('수박');
+            document.getElementById('arrayText').innerHTML=text;
+        }
+
+        function unshiftbtn(){
+            text.unshift('자몽');
+            document.getElementById('arrayText').innerHTML=text;
+        }
+
+        function slicebtn(){
+            var slicetext = text.slice(0,1);
+            document.getElementById('arrayText').innerHTML=slicetext;
+        }
+//마지막 꺼부터 하나씩 삭제
+        function popbtn(){
+            text.pop();
+            document.getElementById('arrayText').innerHTML=text;
+        }
+//앞에서 부터 하나씩 삭제
+        function shiftbtn(){
+            text.shift();
+            document.getElementById('arrayText').innerHTML=text;
+        }
+
+    </script>
+</body>
+</html>

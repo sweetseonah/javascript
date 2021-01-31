@@ -1,0 +1,59 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <title>자바스크립트를 이용한 롤링배너</title>
+		
+	<style type="text/css">
+	h1,p,a, img,div{margin:0;padding:0}
+	a{text-decoration:none}
+	img{border:none}
+	.bannerwrap{width:600px;
+	border:1px solid #c3c3c3;
+	padding:10px;
+	margin:0 auto;}
+	#panel{width:600px;
+	margin:0 auto}
+	#panel img{width:600px;}
+	.btnwrap{text-align: right;}
+	</style>
+<script type="text/javascript">
+	var st;
+	var num=1;
+	function rolling(){
+		// console.log('함수확인')
+		num++;
+		if(num>5){
+			num=1
+		}
+		// console.log(num)
+
+		var pic= document.getElementById('pic');
+		pic.src="images/mainbig"+num+"_mall.jpg"
+		 }	
+		 
+	 st = setInterval(rolling,3000)
+	 
+	 function btnStop(){
+		 clearInterval(st)
+	 }
+
+	 function btnPlay(){
+		clearInterval(st)
+		st = setInterval(rolling,3000)
+	 }
+</script>
+</head>
+
+<body>
+<div class="bannerwrap">
+    <p class="btnwrap">
+    	<a href="#"  onclick="btnStop()" ><img src="images/btn_pause.gif"  alt=""/></a>
+        <a href="#"  onclick="btnPlay()" ><img src="images/btn_start.gif"  alt=""/></a>
+        <!-- <a href="#" onclick="rolling()" >rolling 확인</a> -->
+    </p>
+    <div id="panel">
+    	<img src="images/mainbig1_mall.jpg" id="pic"  alt=""/>
+    </div>
+	</div>
+</body>
+</html>

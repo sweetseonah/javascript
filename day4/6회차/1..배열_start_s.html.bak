@@ -1,0 +1,45 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko">
+ <head>
+  <title> new document </title>
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <style type="text/css">
+  <!--
+  *{margin:0; padding:0;}
+	body{font-size:12px; font-family:"돋움",dotum; color:#000;}
+	img{border:none;}
+	#todayContainer{width:350px;
+					border:1px solid #C3C3C3;
+					padding:10px;}
+	h3			{float:left;}
+	#pageContainer{text-align:right; }
+	input,img{vertical-align:middle;}
+	#todayCatalog img{border:1px solid #e4e4e4; padding:1px;}
+	
+  //-->
+  </style>
+  <script type="text/javascript">
+  //<![CDATA[
+  
+  //]]>
+  </script>
+ </head>
+ <body>
+	<div id="todayContainer" style="background:#f6f6f6">
+		<h3><img src="images/h3.png" alt=""/></h3>
+		<div id="pageContainer">
+			<span><strong id="pageNum">1</strong>/4</span>
+			<input type="image" src="images/left.gif" value="이전" class="prev" onClick="javascript:prevProduct();"/><input type="image"  src="images/right.gif" value="다음" class="next" onClick="javascript:nextProduct();"/>
+		</div>
+		<div id="todayCatalog">
+			<a href="http://www.naver.com" id="productLink">
+					<img src="images/banner1.jpg" id="productImg" alt="1번입니다"/>
+					
+			</a>
+		</div>
+	</div>
+
+ </body>
+</html>

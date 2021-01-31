@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const superheroes=['아이언맨','캡틴아메리카','토르','닥터스트레인지'];
+
+        // for (let i=0; i<superheroes.legnth; i++){
+        //     console.log(superheroes[i])
+        // }
+
+        // function print(hero){
+        //     console.log(hero);
+        // }
+        // superheroes.forEach(print);
+
+        //화살표함수
+        // superheroes.forEach(hero => {
+        //     console.log(hero);
+        // })
+
+        //map배열내장함수
+        // const array =[1,2,3,4,5,6,7,8]
+        // const squared=[]
+        // for(let i=0; i<array.length; i++){
+        //     squared.push(array[i]*array[i])
+        // }
+        // console.log(squared)
+
+        // //화살표 함수 and forEach
+        // array.forEach(n => {
+        //     squared.push(n*n)
+        // })
+
+// map은 배열안의 각 원소를 변화할 떄 사용되고, 이과정에서 새로운 배열이 만들어진다
+        // const array=[1,2,3,4,5,6,7,8];
+        // const square=(n)=>n*n;
+        // const squared = array.map(square)
+        // console.log(squared)
+
+        // const array=[1,2,3,4,5,6,7,8];
+        // const squared=array.map((n)=>n*n)
+        // console.log(squared)
+
+        const items=[
+            {
+                id:1,
+                text:'hello'
+            },
+            {
+                id:2,
+                text:'bye'
+            }
+        ]
+        
+        const texts = items.map(item => item.text);
+        console.log(texts);
+    </script>
+</body>
+</html>
