@@ -1,0 +1,33 @@
+body {padding:0;margin:0;font-family: 돋움;font-size: 12px;}
+ul {list-style:none;}
+dl, dt, dd {margin: 0;padding: 0;}
+img{border:none}
+
+a {color: #33333B;text-decoration: none;}
+#eventContainer {border: 1px solid #CDCDCD;display:block;overflow: hidden;position: relative;width:600px;margin:10px auto;}
+#eventContainer p.tit {padding: 12px 15px 7px 13px;position: relative;color:#ff9933;text-align:center;font-weight:bold;font-size:14px;}
+
+#menuContainer {border: 1px solid #CDCDCD;display:block;overflow: hidden;position: relative;width:600px;margin:10px auto;}
+
+.list {display: inline-block;margin: 0 0 7px 18px;position: relative;}  
+.list dt {display: inline-block;float: left;height: 188px; position: relative;width: 115px;}
+.list dt a {display: inline-block;height: 198px;position: relative;text-decoration: none;width: 115px;}
+.list dt a:hover {border:1px solid #e64a46;background:#e64a46;color:#fff;}
+.list dt a.on {border:1px solid #e64a46;background:#e64a46;color:#fff;}
+.list dt .thumb {display: inline-block;height: 130px;left: 10px;position: relative;top: 12px;width: 95px;}
+.list dt .thumb img {border: 1px solid #ECECEC;cursor: pointer;position: absolute;z-index: 1;}
+
+
+.list dt  p.info {cursor: pointer;display: block;position: relative;text-align: center;}
+.list dt  p.info .txt1 {display: block;font-weight: bold;height: 14px;letter-spacing: -0.1em;margin-top: 8px;overflow: hidden;}
+.list dt  p.info .txt2 {color: #ADADAD;display: block;font-size: 11px;height: 12px;letter-spacing: -0.1em;margin: 2px 0;overflow: hidden;}
+.list dt  p.info .txt3 {display: block;font-size: 11px;height: 12px;overflow: hidden;letter-spacing: -0.1em;margin: 2px 0;}
+
+
+p.info1 {padding-left:10px;background:url('../images/bl_on.gif') no-repeat 0 center;}
+p.info1 img.ingoimg {width:50px;height:60px;vertical-align:middle;margin-right:5px;}
+p.info1 .txt {font-weight: bold;height: 14px;letter-spacing: -0.1em;margin-top: 8px;}
+p.info1 .delBtn {margin:0;padding:0;}
+
+
+#eventList li{float:left;  margin-right:10px;}

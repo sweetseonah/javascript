@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            // 전체선택자
+            $('*').css('color','blue');
+            // 태그선택자
+            $('h2').css('backgroundColor','gray');
+            //클래스선택자
+            $('.select').css('border','2px dotted red');
+            //아이디선택자
+            $('#select').css('fontsize','36px');
+            //자식선택자
+            $('ul>li').css('textIndent','100px')
+        })
+    </script>
+    <title>Document</title>
+</head>
+<body>
+    <h1>전체선택자</h1>
+    <p> 전체선택자는 *로 표현한다</p>
+    <h2>태그 선택자</h2>
+    <div> html태그를 선택하여 적용</div>
+    <h2> 클래스선택자</h2>
+    <p class=" select">클래스명을 선택하여 적용</p>
+     <h2>아이디선택자</h2>
+     <p id="select"> 아이디명을 선택하여 적용</p>
+     <h2>자식선택자</h2>
+     <ul>
+         <li>첫번째 요소</li>
+         <li>두번째 요소</li>
+         <li>세번째 요소</li>
+     </ul>
+</body>
+</html>

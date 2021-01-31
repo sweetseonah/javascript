@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+	<style type="text/css">
+	body, div, ul, li,a, img, p, form,
+	fieldset, legend, label, select,input,h3{margin:0;
+	padding:0;}
+	img,fieldset{border:none}
+	body{font-size:12px;
+	color:#333;}
+	a{text-decoration:none;
+	color:#333}
+	ul{list-style:none}
+	legend,label{width:1px;
+	height:1px;
+	font-size:0;
+	line-height:0;
+	position:absolute;
+	left:-999px;
+	overflow:hidden;
+	visibility:hidden;}
+	.bannerwrap{width:950px;
+	margin:50px auto;}
+	.btnlist{}
+	.btnlist  li{float:left;}
+
+
+	.btnlist > li:nth-child(3){width:178px;
+	background:url(ex11/btn.png) no-repeat right 20px #c6c6c6;
+	padding:10px 10px 0 0;
+	height:40px;}
+
+	.btnlist > li:nth-child(3):hover{background-position:right -15px;}
+
+
+	.wralist{width:186px;
+	margin-top:5px;
+	border:1px solid #c7c7c7;
+	display:none}
+	.wralist ul li{float:none;
+	line-height:2;
+	border-bottom:1px dashed #666;
+	padding-left:10px;
+	width:178px;
+	cursor:pointer;
+	}
+
+
+	</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	$('.tel > a').on('mouseenter',function(){
+	
+		$('.wralist').show();
+
+		// $('.wralist > ul >li').on('mouseenter',function(){
+		// 	$(this).css('backgroundColor','#c1c1c1')
+		// })
+		// $('.wralist > ul >li').on('mouseleave',function(){
+		// 	$(this).css('backgroundColor','')
+		$('.wralist > ul >li').on({
+			mouseenter:function(){
+				$(this).css('backgroundColor','#c1c1c1')
+			},
+			mouseleave:function(){
+				$(this).css('backgroundColor','')
+			}		
+		})
+	})
+
+	$('.wralist').on('mouseleave',function(){
+		$(this).hide();
+	})
+}) 
+</script>
+
+</head>
+
+ <body>
+		<div class="bannerwrap">
+			<ul class="btnlist">
+				<li><a href="#"><img src="ex11/btn_online01.gif"/></a></li>
+				<li><a href="#"><img src="ex11/btn_online02.gif"/></a></li>
+				<li class="tel"><a href="#"><img src="ex11/blt_online_tel.jpg"/></a>
+					<div class="wralist">
+						<ul>
+							<li>[강남]02-123-4567</li>
+							<li>[종로]02-123-4567</li>
+							<li>[신촌]02-123-4567</li>
+							<li>[수원]02-123-4567</li>
+							<li>[일산]02-123-4567</li>
+							<li>[안양]02-123-4567</li>
+							<li>[인천]02-123-4567</li>
+						</ul>
+					</div>
+				</li>
+				<li><a href="#"><img src="ex11/btn_online04.gif"/></a></li>
+				<li><a href="#"><img src="ex11/btn_online05.gif"/></a></li>
+			</ul>
+		</div>
+ </body>
+</html>

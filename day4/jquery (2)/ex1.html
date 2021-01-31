@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+<style type="text/css">
+	body, div,ul, li, a, img{margin:0;padding:0}
+	ul{list-style-type:none;}
+	img{border:none}
+	a{text-decoration:none}
+	.nav{width:400px;
+	margin:50px auto;
+	border:1px solid #c3c3c3;
+	padding:10px;}
+	ul{overflow:hidden;}
+	li{float:left; 
+	margin:0 10px;
+	}
+	#gallery{width:348px;height:168px;}
+	#gallery.gallery1{background:url(ex1/img01.jpg) no-repeat}
+	#gallery.gallery2{background:url(ex1/img03.jpg) no-repeat}
+	#gallery.gallery3{background:url(ex1/img02.jpg) no-repeat}
+	</style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script>
+		// addclass and removeclass
+		$(document).ready(function(){
+			$('#btn1').on('click',function(){
+				$('#gallery').removeClass().addClass('gallery1');
+			})
+			$('#btn2').on('click',function(){
+				$('#gallery').removeClass().addClass('gallery2');
+			})
+			$('#btn3').on('click',function(){
+				$('#gallery').removeClass().addClass('gallery3');
+				
+			})
+		})
+	</script>
+
+ </head>
+ <body>
+  <div class="nav">
+			<ul class="">
+				<li id="bnt1"><a href="#"><img src="ex1/btn01.jpg"  alt=""/></a></li>
+				<li  id="bnt2"><a href="#"><img src="ex1/btn02.jpg"  alt=""/></a></li>
+				<li  id="bnt3"><a href="#"><img src="ex1/btn03.jpg"  alt=""/></a></li>
+			</ul>
+			<div class="gallery1"  id="gallery">
+			</div>
+  </div>
+ </body>
+</html>

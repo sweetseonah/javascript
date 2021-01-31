@@ -1,0 +1,48 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko">
+ <head>
+  <title> new document </title>
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <link href="css/common.css" type="text/css" rel="stylesheet"  media="screen" />
+ </head>
+ <body>
+<form name="frm" method="post">	
+	<label for="mem_name">이름(필수)</label>
+	<input type="text" id="mem_name" size="15" name="userName" maxlength="10"/>
+	<label for="mem_phone">전화번호</label>
+	<input type="text" id="mem_phone" size="20" maxlength="11" name="userPhone"/>
+	<a href="#"><img src="images/btn_add.gif" alt="추가"/></a>		
+</form>
+<table id="adressList">
+	<caption>전화번호부</caption>
+	<colgroup>
+		<col width="40%" />
+		<col width="40%" />
+		<col width="20%" />
+	</colgroup>
+	<thead>
+		<tr>
+			<th scope="col">이름</th>
+			<th scope="col">전화번호</th>
+			<th scope="col">삭제</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td colspan="3">등록 된 내용이 없습니다.</td>
+		</tr>
+		<!--
+		<tr>
+			<td>홍길동</td>
+			<td>010-1234-5678</td>
+			<td>
+				<a href="#"><img src="images/btn_del.gif" alt="삭제" /></a>
+			</td>
+		</tr>
+		-->
+	</tbody>
+</table>
+ </body>
+</html>

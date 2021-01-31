@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+		<style>
+
+			body,div,ul,li,a, img,p, form, fieldset, legend, h3, select, option, input, dl, dt,dd,p,span{margin:0; padding:0}
+			ul{list-style:none}
+			img,fieldset{border:none}
+			a{text-decoration:none;
+					color:#333;
+					font-size:12px;}
+			legend{display:none}
+			body{color:#333
+					font-size:12px;}
+
+		#search{width:490px;
+							   height:50px;
+										background:url(ex19/searchbg.gif) no-repeat;
+										position:relative;
+										margin:50px auto;}  
+.allbtn{float:left;
+								width:85px;
+								height:33px;
+								padding:17px 0 0 15px;
+								display:block;
+								margin-right:20px;
+								}
+.allbtn span{
+background:url(ex19/icon.png) no-repeat right 4px; 
+padding-right:10px;}
+.allbtn  .on{background:url(ex19/icon.png) no-repeat right -9px;
+padding-right:10px;}
+
+.allmenu{position:absolute;
+									top:45px;
+									left:5px;
+									border:1px solid #09c;
+									width:80px;
+									padding:8px;
+									display:none;}
+.allmenu li{line-height:2.5;
+									border-top:1px dotted #e4e4e4;}
+.allmenu li:first-child{border-top:none;}								
+.allmenu li a{display:block;}
+
+.it{width:280px;
+			height:20px;
+			border:none;
+			margin-top:5px;
+			padding:7px 0 0 3px;}
+
+.searchbtn{position:absolute;
+								top:5px;
+								right:5px;}
+			</style>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script language="javascript" type="text/javascript">
+
+</script>
+ </head>
+ <body>
+ 
+		<div id="search">
+			<form method="post"  action="" name="frm">
+					<fieldset>
+							<legend>전테카테고리</legend>
+							<a href="#" class="allbtn"><span class="txt">전체카테고리</span> </a>
+							<ul class="allmenu">
+								<li><a href="#">패션의류</a></li>
+								<li><a href="#">자동차</a></li>
+								<li><a href="#">상품권</a></li>
+								<li><a href="#">패션잡화</a></li>
+								<li><a href="#">생활/주방</a></li>
+								<li><a href="#">도서/여행</a></li>
+								<li><a href="#">가전/디지털</a></li>
+								<li><a href="#">식품</a></li>
+							</ul>
+							<input type="text"  class="it"  title="" value="다음과 즐거운 쇼핑" name="keyword" id="keyword"/>
+
+
+          
+							<input type="image" src="ex19/btn_search_main.gif" alt="검색"  title="검색" class="searchbtn" />
+
+							
+					</fieldset>
+			</form>
+		</div>
+
+ </body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko">
+ <head>
+  <title> new document </title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+	<style type="text/css">
+	<!--
+			body, div, ul, li,a, img, span{margin:0; padding:0;}
+			ul{list-style-type:none;}
+			a{text-decoration:none; color:#333;}
+			img{border:none;}
+			#bannerwrap{width:785px; height:295px; overflow:hidden; position:relative;}
+			.banner{width:785px; height:295px;  cursor:pointer;position:relative; }
+			.banner li{position:absolute; left:0;top:0;}
+
+			.btn1{position:absolute; top:40%; width:785px; display:block;}
+			.prev{background:url(ex18/btn1.png) left top; width:70px; height:52px;display:inline-block; left:0; position:absolute; }
+			.prev:hover, .prev:active{background:url(ex18/btn1.png) left -59px; width:70px; height:52px;display:inline-block; left:0; position:absolute; }
+			.prev span, .next span{display:none; }
+
+
+			.next{background:url(ex18/btn1.png) right top; width:70px; height:50px;display:inline-block; right:0; position:absolute; }
+			.next:hover, .next:active{background:url(ex18/btn1.png) right -59px; width:70px; height:52px;display:inline-block; right:0; position:absolute; }
+
+			.btn2{position:absolute; left:20px; bottom:20px;}
+			.btn2 li{float:left; margin-right:10px;}
+			.btn2 li a{width:13px; height:13px; display:inline-block; font-weight:bold;
+										 background:url(ex18/btn2.png) left top;}
+			.btn2 li a.on{background:url(ex18/btn2.png) left -14px;}
+			.btn2 li span{display:none; }
+
+
+			.btn  {
+										position:absolute;
+										bottom:20px;
+										right:50px;
+										z-index:999;}
+				.btn  a span{text-indent:-1000px;}
+
+	//-->
+	</style>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<script type="text/javascript">
+	
+	</script>
+ </head>
+
+ <body>
+ <div id="bannerwrap">
+	<div class="banner">
+		<ul id="bannerList">
+				<li class="on"><img src="ex18/banner1.jpg" alt=""/></li>
+				<li><img src="ex18/banner2.jpg" alt=""/></li>
+				<li><img src="ex18/banner3.jpg" alt=""/></li>
+				<li><img src="ex18/banner4.jpg" alt=""/></li>
+				<li><img src="ex18/banner5.jpg" alt=""/></li>
+		</ul>	
+	</div>
+<div class="btn1">
+	<a href="#" class="prev">	<span >왼쪽이동</span></a>
+	<a href="#" class="next">	<span >오른쪽이동</span></a>
+	</div>
+	<div class="btn">
+			<a href="#" class="stop"><img src="ex18/stop.png"  alt="정지"/></a>
+		<a href="#" class="play"><img src="ex18/play.png"  alt="실행"/></a>
+	</div>
+<ul class="btn2">
+		<li><a href="#" class="on"><span>1</span></a></li>
+		<li><a href="#"><span>2</span></a></li>
+		<li><a href="#" ><span>3</span></a></li>
+		<li><a href="#" ><span>4</span></a></li>
+		<li><a href="#" ><span>5</span></a></li>
+	</ul>
+	
+ </div>
+
+
+ </body>
+</html>

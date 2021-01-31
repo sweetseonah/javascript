@@ -1,0 +1,107 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko">
+ <head>
+  <title> new document </title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+
+	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+
+<script language="javascript" type="text/javascript">
+
+</script>
+
+  <style type="text/css">
+  <!--
+	body, ul, li, h3, a, p,span, img,form, fieldset, legend, label, input{margin:0; padding:0;}
+	ul{list-style-type:none;}
+	img,fieldset{border:none}
+	a:link,a:visited{text-decoration:none;
+					color:#333;}
+	a:hover,a:active{text-decoration:underline;
+					color:#333;}
+	body{font-size:12px;
+			color:#333;
+			font-family:"돋움",dotum;
+			}
+	legend, .skip{width:1px;
+														height:1px;
+														overflow:hidden;
+														visibility:hidden;
+														line-height:0;
+														font-size:0;
+														position:absolute;
+														left:-999px;
+														}
+.mber{width:242px; 
+					margin:100px auto 0  auto;
+					background:url(ex31/login_bg.gif) no-repeat;
+					height:124px;}
+		#login{padding:3px 10px; 
+		     position:relative;
+		     }
+		input[type="text"]
+									{background:url(ex31/idboxTxt.gif) no-repeat;
+									 width:152px;
+										height:20px;
+										border:1px solid #c3c3c3;
+										margin:0 0 2px 0;
+										padding-left:5px;}
+		input[type="password"]
+									{background:url(ex31/pwboxTxt.gif) no-repeat;
+									 width:152px;
+										height:20px;
+										border:1px solid #c3c3c3;
+										padding-left:5px;}
+.loginBtn{position:absolute;
+									top:17px;
+									right:10px;}
+
+.joinBtn{float:left; margin:4px 25px 0 0;}
+.idpwBox{margin:4px 0 0 0;}
+
+input{vertical-align:middle;}
+  //-->
+  </style>
+ </head>
+ <body>
+	<form method="post" action="" class="mber">
+		<fieldset  class="">
+			<legend>로그인</legend>
+			<h3><img src="ex31/login_tit.gif"  alt="member login"/></h3>
+			<ul id="login">
+				<li class="selectbox">
+					<input type="radio" class="it" title="일반회원" value="" name="basic" id="basic"
+					checked="checked"/>
+					<label for="basic">일반회원</label>
+
+					<input type="radio" class="it" title="관리자" value="" name="basic" id="editor"	/>
+					<label for="editor">관리자</label>
+				</li>
+		 	<li class="idbox">
+					<label for="loginid" class="skip">아이디</label>
+					<input type="text" class="id" title="아이디입력" value="" name="id" id="loginid"/>
+				</li>
+
+				<li class="pwbox">
+					<label for="loginpw" class="skip">비밀번호</label>
+					<input type="password" class="pw" title="비밀번호입력" value="" name="pw" id="loginpw"/>
+				</li>
+				
+				<li class="loginBtn">
+					<input type="image" src="ex31/login_btn.gif" class="loginbtn" title="로그인" alt="로그인" />
+				</li>
+
+				<li class="joinBtn"><a href="#">회원가입</a></li>
+
+				<li class="idpwBox">
+				 <a href="#">아이디</a> |
+					<a href="#">비밀번호찾기</a>
+				</li>
+			</ul>
+		</fieldset> 
+	</form>
+ </body>
+</html>

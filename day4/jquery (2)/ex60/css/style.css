@@ -1,0 +1,42 @@
+div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, code, del, dfn, em, img, q, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, dialog, figure, footer, header, hgroup, nav, section	{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline;}
+article, aside, details, figcaption, figure, dialog, footer, header, hgroup, menu, nav, section	{display:block;}
+ol,ul,li	{list-style:none;font-weight:normal;}
+table	    {border-collapse:collapse; border-spacing:0; table-layout:fixed;}
+caption, th, td	    {text-align:left;font-weight:normal;float:none !important;}
+table, th, td		{vertical-align:top;}
+/* blockquote:before, blockquote:after, q:before, q:after {content:"";} */ /* loen 체크필요 */
+blockquote, q {quotes:"" "";}
+a img {border:none;}
+img	  {border:none;line-height:0;font-size:0;}
+em {font-style:normal;}
+
+hr       {background:#ddd;color:#ddd;clear:both;float:none;width:100%;height:1px;margin:0 0 17px;border:none;}
+hr.space {background:#fff;color:#fff;visibility:hidden;}
+fieldset {border:0; line-height:0;}
+legend   {position:absolute; top:-7000px; left:-7000px; height:0; /* visibility:hidden */}
+
+.event{position:relative;width:236px;margin:0 0 0 8px;float:left;height:340px}
+.event h2 a.title_link{width:50px;height:15px;display:block;background:url(../images/bg_main_title_140716.png) no-repeat;background-position:0 -45px;text-indent:-9999px}
+.event .event_list{position:relative;overflow:hidden;width:236px;height:315px;padding-top:24px}
+.event .event_list .image_type24{position:absolute;width:236px;height:315px;}
+.event div a span.bg_album_frame{position:absolute;top:0;left:0;width:236px;height:315px;background:url(../images/bg_frame.png) no-repeat 0 0}
+.event .event_default{position:absolute;overflow:hidden;width:236px;height:315px;top:24px;z-index:1}
+.event .event_default .image_type24{position:absolute;width:236px;height:315px}
+.event .event_default a span.bg_album_frame{position:absolute;top:0;left:0;width:236px;height:315px;background:url(../images/bg_frame.png) no-repeat 0 0}
+.event .play_control{overflow:hidden;position:absolute;top:1px;right:2px;text-align:right;line-height:0}
+.event .play_control .move{display:inline-block;margin:2px 0 0 0}
+.event .play_control .move a{display:inline-block;width:10px;height:10px;margin-left:3px;font-size:0;line-height:0;background:url(../images/bg_btn_page02_140716.png) no-repeat -13px -189px;vertical-align:top}
+.event .play_control .move a:first-child{margin:0}
+.event .play_control .move a.on{background:url(../images/bg_btn_page02_140716.png) no-repeat -1px -189px}
+.event .play_control .move a:hover{background:url(../images/bg_btn_page02_140716.png) no-repeat -1px -189px}
+.event .play_control .d_btn_ctrl{float:right;margin-left:10px}
+.event .play_control .d_btn_ctrl span{display:inline-block;width:15px;height:15px;font-size:0;line-height:0;vertical-align:top}
+.event .play_control .pause span{background:url(../images/bg_btn_page02_140716.png) no-repeat left -171px}
+.event .play_control .pause.mhover span{background-position:-17px -171px !important}
+.event .play_control .pause:active span{background-position:-34px -171px !important}
+.event .play_control .pause.mactive span{background-position:-34px -171px !important}
+.event .play_control .play{float:right}
+.event .play_control .play span{background:url(../images/bg_btn_page02_140716.png) no-repeat left -155px}
+.event .play_control .play.mhover span{background-position:-17px -155px !important}
+.event .play_control .play:active span{background-position:-34px -155px !important}
+.event .play_control .play.mactive span{background-position:-34px -155px !important}

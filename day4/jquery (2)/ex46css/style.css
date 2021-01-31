@@ -1,0 +1,60 @@
+*{margin:0;padding:0;}
+ol,ul,li	{list-style:none;font-weight:normal;}
+a img {border:none;}
+img	  {border:none;line-height:0;font-size:0;}
+
+
+.event{position:relative;
+			width:236px;
+			margin:0 0 0 8px;
+			float:left;
+			height:340px}
+
+.event .event_list{position:relative;
+					/*overflow:visible;*/
+					width:236px;
+					height:315px;
+					padding-top:24px;
+					overflow:hidden;
+}
+
+.event .event_list .image_type24{position:absolute;
+								 top:24px;
+								 left:0;
+										width:236px;
+										height:315px;}
+.event .play_control{overflow:hidden;
+						position:absolute;
+						top:1px;right:2px;
+						text-align:right;
+						line-height:0}
+
+.event .play_control .move{display:inline-block;
+								margin:2px 0 0 0}
+
+.event .play_control .move a{display:inline-block;
+							width:10px;height:10px;
+							margin-left:3px;
+							font-size:0;line-height:0;
+							background:url(../images/bg_btn_page02_140716.png) no-repeat -13px -189px;
+							vertical-align:top}
+
+
+.event .play_control .move a:first-child{margin:0}
+
+.event .play_control .move a.on{background:url(../images/bg_btn_page02_140716.png) no-repeat -1px -189px}
+.event .play_control .move a:hover{background:url(../images/bg_btn_page02_140716.png) no-repeat -1px -189px}
+
+.event .play_control .d_btn_ctrl{float:right;
+								margin-left:10px}
+
+.event .play_control .d_btn_ctrl span{display:inline-block;
+										width:15px;height:15px;
+										font-size:0;line-height:0;
+										vertical-align:top}
+.event .play_control .pause span{background:url(../images/bg_btn_page02_140716.png) no-repeat left -171px}
+
+
+
+.event .play_control .play{float:right}
+.event .play_control .play span{background:url(../images/bg_btn_page02_140716.png) no-repeat left -155px}

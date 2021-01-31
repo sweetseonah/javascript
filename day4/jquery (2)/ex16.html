@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>text slide up - animate</title>
+<style type="text/css">
+	*{margin:0;padding:0;}
+	#wrap{width:930px;margin:0 auto;} /* width를 주면 인터넷 창을 줄여도 다음 줄로 넘어가지 않음. */
+	.news{width:300px;height:150px;position:relative;color:#fff;overflow:hidden;cursor:pointer;float:left;margin-right:10px;}
+	.news .layer{position:absolute;top:125px;left:0;width:auto;height:50px;background:#000;opacity:0.7;padding:5px;} /* opacity => css3, width:auto 생략 가능 */
+	.news .layer em{display:block;font-weight:bold;font-style:normal;}
+	.news .layer span{display:block;}
+</style>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script type="text/javascript">
+
+</script>
+</head>
+
+<body>
+	<div id="wrap">
+        <div class="news">
+            <p><img src="ex16/img1.jpg" alt="dummyimage"></p>
+            <p class="layer">
+                <em>절대쇼핑의 법칙</em>
+                <span>가을패션 잡화총집합 즉시적립할인 추가혜택</span>
+            </p>
+        </div>
+        <div class="news">
+            <p><img src="ex16/img2.jpg" alt="dummyimage"></p>
+            <p class="layer">
+                <em>BIOTHERM</em>
+                <span>인기아이템 신세계모바일 상품권증정(선착순200)</span>
+            </p>
+        </div>
+        <div class="news">
+            <p><img src="ex16/img3.jpg" alt="dummyimage"></p>
+            <p class="layer">
+                <em>패션잡화 가을대축제</em>
+                <span>기획특가 장기세일 신상품추가 3%할인혜택</span>
+            </p>
+        </div>
+    </div>
+</body>
+</html>
