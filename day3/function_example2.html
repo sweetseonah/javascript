@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //명시적 함수
+        function funName(x,y,z){
+            console.log('x:'+x);
+            console.log('y:'+y);
+            console.log('z:'+z);
+            var result = x+y+z;
+            return result;
+        }
+        var num=0; //전역변수
+        num=funName(2,3,4);
+        console.log('합계:'+num);
+
+        //값이 하나더 들어간 경우
+        num=funName(2,3,4,5);
+        console.log('합계:'+num);
+
+        //값이 하나더 빠진 경우
+        num=funName(2,3);
+        console.log('합계:'+num);
+    </script>
+</body>
+</html>

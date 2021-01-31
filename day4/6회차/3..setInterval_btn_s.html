@@ -16,7 +16,7 @@
 	overflow:hidden;
 	margin:0 auto;}
 	#slide{width:3485px; position:absolute; left:0; top:0;}
-	#slide li{float:left;}
+	#slide li{float:left;width:697px;} 
 	.ifex p{position:absolute; top:40%;  z-index:10;}
 	.ifex .leftbtn{left:0;}
 	.ifex .rightbtn{right:0;}
@@ -24,48 +24,51 @@
 	.btn{position:absolute;
 	bottom:20px;
 	text-align:center;
-	width:679px;
+	width:697px;
 	}
 
 </style>
 <script type="text/javascript">
-	var st;
-	var num=1;
-	var img=
-    ['images/banner1.jpg','images/banner2.jpg','images/banner3.jpg','images/banner4.jpg']
+	var banner=697;
+	var num=0;
 
 	function rolling(){
-		// console.log('함수확인')
 		num++;
-		if(num>5){
-			num=1
+		if(num>4){
+			num=0
 		}
-		// console.log(num)
-
-		var pic= document.getElementById('pic');
-		pic.src="images/img"+num+".jpg"
-		 }	
-		 
-	 st = setInterval(rolling,3000)
+		photo(num)
+	}
+	function photo(num){
+		var pic=document.getElementById('slide')
+		pic.style.left=-(banner*num) + 'px'
+	}
+	 st = setInterval(rolling,1000)
 	 
 	 function leftBtn(){
+		clearInterval(st)
 		 num--
-		 if(num<1){
-			 num=5
+		 if(num<0){
+			 num=4
 		 }
+		 photo(num)
+		 st = setInterval(rolling,1000)
 	 }
 	 function rightBtn(){
+		clearInterval(st)
 		 num++
-		 if(num>5){
-			 num=1
+		 if(num>4){
+			 num=0
 		 }
+		 photo(num)
+		 st = setInterval(rolling,1000)
 	 }
 	 function stopb(){
 		 clearInterval(st)
 	 }
 	 function playb(){
 		clearInterval(st)
-		st = setInterval(rolling,3000)
+		st = setInterval(rolling,1000)
 	 }
 
 </script>

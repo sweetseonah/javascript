@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<title></title>
+	<meta name="robots" content="noindex, nofollow" />
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+	<meta name="author" content="" />
+     <style>
+		 div{
+			 width:200px; 
+			 height: 200px;
+			 border: 1px solid #000;
+			 margin: 10px;
+			 float:left;
+			 padding: 60px;
+			 text-align: center;
+			 background-color: #09c;
+			 font-size: 20px
+		 }
+		 p{background-color: #fff;
+		    padding:30px;}
+    </style>
+</head>
+
+<body>
+		<div onmouseleave="leave()">
+			<p>onmouseleave:<br/><span id="ex1">마우스내려놓기</span></p>
+	    </div><!--onmouseenter-->
+	
+	   <div onmouseout="out()">
+			<p>onmouseout:<br/><span id="ex2">마우스내려놓기</span></p>
+	    </div><!--onmouseover-->
+	
+	   <script>
+	       var x=0;
+		   var y=0;
+		   function leave(){
+			   document.getElementById('ex1').innerHTML=x+=1;
+		   }
+		   
+		   function out(){
+			   document.getElementById('ex2').innerHTML=y+=1;
+		   }
+	  </script>
+</body>
+
+</html>
+
+
+
+
+
+
+
