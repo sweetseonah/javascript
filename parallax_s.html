@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+  <style type="text/css">
+
+   body,div, strong,ul, span, li, span, a, img{margin:0; padding:0}
+   ul{list-style-type:none;}
+   img{border:none}
+   body{font-size:12px;
+   color:#333;
+   font-family:'나눔고딕',"돋움",dotum;
+   }
+   a{text-decoration:none;}
+   .wrapper{width:100%}
+   .intro_header{width:1200px;
+                 height:100px;
+				 margin:0 auto;
+				 position:relative;
+				 }
+   .intro_header .journal{position:absolute;
+                           left:0;
+						   top:30px}
+	.intro_header .logotv{position:absolute;
+                           right:0;
+						   top:30px}
+h1{text-align:center;
+    margin-top:40px}
+						 
+ .gnb{background:#003399;
+      height:80px;
+	width:100vw;
+	position:relative;
+	z-index:900}
+.gnb ul{width:1200px;
+        overflow:hidden;
+		margin:0 auto;}
+.gnb ul li{float:left;
+       line-height:80px;
+	   margin-left:100px;}
+    
+.gnb ul li a{font-size:24px;
+             color:#fff}
+.container{position:relative;
+            width:100%;
+			height:100vh}
+.banner  img{width:100vw;
+              height:100vh}
+.banner span{position:absolute;
+             top:100px;
+			 left:10%;
+			 font-size:24px;
+			
+			 }
+.banner span strong{font-size:50px;
+                      margin-bottom:20px;
+					  display:inline-block;
+					  }
+.fixed{position:fixed;
+      top:0}	
+
+  </style>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script  type="text/javascript">
+    $(document).ready(function(){
+		var navOffset=$('.gnb').offset().top
+		$(window).scroll(function(){
+			var scrollPos=$(window).scrollTop();
+			console.log(scrollPos)
+			console.log(navOffset)
+			if(scrollPos >= navOffset){
+				$('.gnb').addClass('fixed')
+				$('.gnb').css('background','rgba(0,0,128,0.5)')
+				$('banner > span').css('left','100px')
+			}else{
+				$('.gnb').removeClass('fixed')
+				$('.gnb').css('background','rgba(0,0,128,1)')
+				$('banner > span').css('left','-999px')
+			}
+		})
+	})
+  </script>
+ </head>
+ <body>
+  <div class="wrapper">
+	 <div class="intro_header">
+		<strong class="journal"><a href="#"><img src="images/logo_journal.gif"  alt="HMG JOURNRL"/></a></strong>
+		<h1><img src="images/logo.gif"  alt="HYUNDAL"/></h1>
+		<strong class="logotv"><a href="#"><img src="images/logo_tv.gif"  alt="HMG TV"/></a></strong>
+	 </div>
+	 <div class="gnb">
+		<ul class="">
+			<li><a href="#">그룹소개</a></li>
+			<li><a href="#">그룹사</a></li>
+			<li><a href="#">사회공헌</a></li>
+			<li><a href="#">미디어센터</a></li>
+			<li><a href="#">인재채용</a></li>
+		</ul>
+	 </div>
+	 <div class="container">
+		 <div class="banner">
+			<img src="images/mm100-5745-223588.jpg"  alt=""/>
+			<span>
+			   <strong>삶의 미래가치를 위한 도전의 역사</strong><br/>
+			    긍정적인 사고와 도전정신으로<br/>
+				미래 성장동력을 건설합니다
+			</span>
+		 </div>
+	 </div>
+  </div>
+ </body>
+</html>
+
+
